@@ -14,7 +14,7 @@ const initdb = async () =>
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
-  try{
+  
     //connecting to jate database and specifying the version I chose
     const jateDB = await openDB('jate', 1);
     //creating a new transaction specifying the database with the corresponding data priviledges
@@ -26,14 +26,14 @@ export const putDb = async (content) => {
     //result
     const result = await request;
     console.log('data stored in the database', result);
-  }catch(error){
-    console.error('putDb not implemented',error)
-  } 
+  
+    console.error('putDb not implemented')
+  
   };
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () =>{ 
-  try{
+  
     //connecting with jate database with version 1
     const jateDB = await openDB('jate',1);
     //creating a new transaction specifying the database with the corresponding data priviledges
@@ -46,9 +46,9 @@ export const getDb = async () =>{
     const result = await request;
     //get data from database
     console.log('data retrieved from database',result);
-  }catch(error){
-    console.error('getDb not implemented',error)
-  }
+  
+    console.error('getDb not implemented')
+  
 };
 
 initdb();

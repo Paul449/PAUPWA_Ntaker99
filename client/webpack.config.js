@@ -18,7 +18,7 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      HtmlWebpackPlugin({
+      new HtmlWebpackPlugin({
         template:'index.html',
         title:'jate',
       }),
@@ -30,10 +30,10 @@ module.exports = () => {
         fingerprints: false,
         inject: true,
         name: 'just Another Text Editor',
-        short_name: 'jate',
+        short_name: 'J.A.T.E',
         description: 'efficient text-editor',
-        background_color: '#222',
-        theme_color: '#272822',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: './',
         publicPath: './',
         icons: [
@@ -54,6 +54,10 @@ module.exports = () => {
           use:['style-loader', 'css-loader'],
         },
         {
+          test:/\.(png|svg|jpg|jpeg|gif)$/i,
+          type:"asset/resource"
+        },
+        {
           test: /\.m?js$/,
           exclude: /node_modules/,
           // We use babel-loader in order to use ES6.
@@ -61,7 +65,7 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime','@babel/plugin-transform-modules-commonjs'],
             },
           },
         },
