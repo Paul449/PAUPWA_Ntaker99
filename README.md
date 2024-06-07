@@ -9,12 +9,13 @@ Usage
 
 Collaboration
 
-Walkthrough Video
+Render Deployment
 
 Github Repository
 
 # Installation
 
+It only requires to click on the install button located on left top
 
 # Usage
 
@@ -22,7 +23,11 @@ This text editor is used on web browsers
 
 # Collaboration
 
-# Walkthrough Video
+N/A
+
+# Render deployment
+
+Render link:
 
 # Github Repository
 
