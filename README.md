@@ -27,7 +27,7 @@ N/A
 
 # Render deployment
 
-Render link:
+Render link: https://paupwa-ntaker99-1.onrender.com/
 
 # Github Repository
 
