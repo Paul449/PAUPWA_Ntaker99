@@ -11,6 +11,8 @@ Collaboration
 
 Render Deployment
 
+Screenshot
+
 Github Repository
 
 # Installation
@@ -28,6 +30,8 @@ N/A
 # Render deployment
 
 Render link: https://paupwa-ntaker99-1.onrender.com/
+
+# Screenshot
 
 # Github Repository
 
