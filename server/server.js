@@ -2,7 +2,7 @@
 const express = require('express');
 //applying express to this app
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3009;
 //middleware
 app.use(express.static('../client/dist'));
 app.use(express.urlencoded({ extended: true }));

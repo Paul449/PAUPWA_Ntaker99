@@ -22,7 +22,7 @@ export const putDb = async(content) => {
     //store data into the jateDB
     const store = tx.objectStore('jate');
     //store and pass content to DB
-    const request = store.put({id:id, todo: content});
+    const request = store.put({id:id, todo:content});
     //result
     const result = await request;
     console.log('data stored in the database', result);
